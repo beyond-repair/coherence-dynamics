@@ -1,13 +1,12 @@
 # Phase 4B Verdict — Sufficient but Not Necessary Condition
 
-**Date:** 2026-10-28
+**Date:** 2026-10-28  
+**Correction:** 2026-10-28 (exponent ranges audited)
 
 ## Refined statement
 
 Finite total spectral weight \(M_0\) is a **sufficient** condition for the universal leading slope \(\mathcal{I}(k)\to-2\).  
 It is not necessary.
-
-The broader sufficient class includes densities that are regularly varying of index \(-1\) (with slowly-varying factors). In that class the approach rate is typically logarithmic and the normalized correction \(\mathcal{J}(k)\) diverges.
 
 ## Exact borderline result
 
@@ -18,11 +17,19 @@ For \(\rho(s)=1/(1+s)\):
 \mathcal{J}(x)\to\infty.
 \]
 
-## Classification by regular variation index \(-\alpha\)
+## Corrected classification by regular variation index \(-\alpha\)
 
-- \(\alpha>1\): \(M_0<\infty\), \(\mathcal{I}\to-2\), \(\mathcal{J}(\infty)\) finite when \(M_1<\infty\).
-- \(\alpha=1\): \(M_0=\infty\), \(\mathcal{I}\to-2\) (logarithmically slow), \(\mathcal{J}\to\infty\).
-- \(\alpha<1\): \(\mathcal{I}\to-2\alpha\neq-2\).
+Assuming local integrability and the stated tail asymptotics:
+
+| Tail exponent | \(M_0\) | Leading limit of \(\mathcal{I}\) |
+|---------------|--------|----------------------------------|
+| \(\alpha<1\) | Divergent | \(-2\alpha\) (under Stieltjes/Tauberian conditions) |
+| \(\alpha=1\) | Depends on \(L\) | Typically \(-2\), rate set by integrated tail |
+| \(\alpha>1\) | Finite | \(-2\) (finite-moment theorem; power formula does not apply) |
+
+The power-dependent limit belongs only to the non-integrable range. When \(\alpha>1\) the finite-moment theorem takes precedence.
+
+\(\mathcal{J}\) finiteness requires control of the first moment (or a stronger tail condition) and is not automatic from the leading limit of \(\mathcal{I}\).
 
 ## Status of prior candidates
 
@@ -30,4 +37,4 @@ For \(\rho(s)=1/(1+s)\):
 - \(\mathcal{J}\) as a universal constant: still FAILED.
 - The leading limit \(\mathcal{I}\to-2\) under the sufficient conditions above: retained as a proven asymptotic theorem.
 
-No definitions were altered. No gravitational interpretation is introduced.
+No definitions were altered. No gravitational interpretation is introduced. This is a mathematical correction of the classification ranges only.
