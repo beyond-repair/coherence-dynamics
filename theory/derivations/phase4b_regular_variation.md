@@ -1,7 +1,8 @@
 # Phase 4B — Refined Asymptotic Boundary via Regular Variation
 
 **Date:** 2026-10-28  
-**Correction:** 2026-10-28 (exponent ranges audited)
+**Final scope correction:** 2026-10-28  
+**Status:** Phase 4B closed
 
 ## Correction to the Phase 4A boundary statement
 
@@ -32,35 +33,26 @@ For \(\rho(s)=1/(1+s)\) (logarithmically divergent \(M_0\)):
 \]
 The leading slope still tends to \(-2\), but the approach is only logarithmic and the normalized correction diverges.
 
-## Corrected regular-variation classification
+## Final theorem statement (Phase 4B closure)
 
-Assume \(\rho\ge 0\), locally integrable, and
+Let \(\rho\) be locally integrable and nontrivial, with
 \[
-\rho(s)\sim s^{-\alpha}L(s),\qquad s\to\infty,
+\rho(s)\sim s^{-\alpha}L(s)\qquad(s\to\infty),
 \]
-with \(L\) slowly varying. The Stieltjes-transform asymptotic
-\[
-\Sigma(k)\sim c\,k^{-2\alpha}L(k^2)
-\]
-(and therefore \(\mathcal{I}(k)\to-2\alpha\)) applies in the non-integrable range under standard Tauberian conditions (monotone density or regular variation with index in \((-1,0)\) after the change of variables, etc.). It does **not** override the finite-moment theorem when the tail is integrable.
+where \(L\) is positive and slowly varying. For the ordinary Stieltjes integral to converge at infinity under this power-law model, require \(\alpha>0\).
 
-| Tail exponent \(\alpha\) | Total weight \(M_0\) | Leading limit of \(\mathcal{I}\) | Notes |
-|--------------------------|----------------------|----------------------------------|-------|
-| \(\alpha<1\) | Divergent | \(-2\alpha\) | Under regular-variation / Tauberian conditions on the Stieltjes transform |
-| \(\alpha=1\) | May be finite or divergent depending on \(L\) | Typically \(-2\) | Rate controlled by the integrated tail of \(L\); see exact example |
-| \(\alpha>1\) | Finite | \(-2\) | Finite-moment theorem applies; power-law formula does not override |
-| \(\alpha\le 0\) | Generally divergent | Separate analysis required | Do not extrapolate the \(-2\alpha\) formula automatically |
+- For \(0<\alpha<1\), under the applicable regular-variation conditions, \(\Sigma(k)\) has leading behavior proportional to \(k^{-2\alpha}L(k^2)\), giving \(\mathcal{I}(k)\to-2\alpha\).
+- For \(\alpha>1\), the tail is integrable; if the full spectral density has finite, nonzero \(M_0\), then \(\mathcal{I}(k)\to-2\).
+- For \(\alpha=1\), classify according to the integrated slowly varying tail and whether \(M_0\) is finite. Do not assert a universal convergence rate without further assumptions.
 
-**Important:** When \(\alpha>1\) the tail is integrable at infinity, so \(M_0<\infty\) (assuming local integrability) and the finite-moment theorem forces \(\mathcal{I}\to-2\). The power-dependent limit belongs only to the non-integrable range \(\alpha<1\).
+The behavior of \(\mathcal{J}(k)\) requires a separate asymptotic analysis and is not determined by the leading limit of \(\mathcal{I}\) alone.
 
-## Behavior of the normalized correction \(\mathcal{J}\)
-
-\(\mathcal{J}(k)\) is finite in the limit only when the first moment converges (or under a stronger integrated-tail condition). Divergence of \(M_1\) does not follow automatically from the leading limit of \(\mathcal{I}\); it depends on the detailed tail. On the borderline \(\alpha=1\) with \(L\equiv 1\), \(\mathcal{J}\to\infty\) as shown by the exact example. For other slowly-varying factors the rate must be derived separately.
+This statement avoids claiming that the Stieltjes integral exists for every \(\alpha\), including nonpositive exponents. The power-dependent limit is confined to the open interval \((0,1)\). The finite-moment theorem retains precedence whenever \(M_0<\infty\).
 
 ## What forces \(\mathcal{I}\to-2\)
 
 Sufficient conditions:
-1. \(M_0<\infty\) (includes all \(\alpha>1\)).
-2. Regular variation of index \(-1\) under conditions that make the Stieltjes transform produce a logarithmic factor (includes the exact example).
+1. \(M_0<\infty\) (includes all integrable tails \(\alpha>1\)).
+2. The borderline \(\alpha=1\) under conditions that produce a logarithmic factor in the Stieltjes transform (exact example included).
 
-The original failed-universality claims for \(\mathcal{I}\) and \(\mathcal{J}\) as constants independent of all spectra remain failed. This correction is a refinement of the sufficient conditions, not a reinterpretation of those failures.
+The original failed-universality claims for \(\mathcal{I}\) and \(\mathcal{J}\) as constants independent of all spectra remain failed. General slowly-varying rates at \(\alpha=1\) are recorded as a bounded follow-up, not a blocker for closure of this phase.
