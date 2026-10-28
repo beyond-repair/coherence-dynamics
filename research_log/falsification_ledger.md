@@ -27,15 +27,15 @@
 ## Established asymptotic results (not claims of new physics)
 
 - If \(M_0=\int\rho<\infty\), then \(k^2\Sigma(k)\to M_0\) and \(\mathcal{I}(k)\to-2\) (sufficient condition).
-- Phase 4B refinement: finite \(M_0\) is not necessary. Densities regularly varying of index \(-1\) (including \(\rho(s)=1/(1+s)\)) still satisfy \(\mathcal{I}\to-2\), with logarithmic approach rate and divergent \(\mathcal{J}\).
-- For regular variation of index \(-\alpha\) with \(\alpha\neq 1\), the limit is \(-2\alpha\).
-- Subleading coefficients and the rate of approach remain spectrum-dependent.
+- Phase 4B refinement: finite \(M_0\) is not necessary. Densities regularly varying of index \(-1\) (including \(\rho(s)=1/(1+s)\)) still satisfy \(\mathcal{I}\to-2\), with logarithmic approach rate; \(\mathcal{J}\) diverges in the exact example.
+- **Corrected range (2026-10-28):** the power-dependent limit \(\mathcal{I}\to-2\alpha\) applies only for non-integrable tails \(\alpha<1\) under Tauberian conditions. For \(\alpha>1\) the finite-moment theorem forces \(\mathcal{I}\to-2\). The earlier blanket statement for all \(\alpha\neq 1\) is withdrawn.
+- Subleading coefficients, approach rates, and \(\mathcal{J}\) remain spectrum-dependent and require separate tail conditions.
 
 ## Open candidates
 
-- Precise approach rates for general slowly-varying factors.
+- Precise approach rates for general slowly-varying factors at \(\alpha=1\).
 - Higher-order normalized corrections.
 - Spectral moment ratios on finite graphs (exact identities; continuum limit open).
 - RG fixed-point exponents (not yet computed).
 
-No retrospective redefinition of any candidate has been performed. The Phase 4B classification is a new theorem.
+No retrospective redefinition of any failed candidate has been performed. The correction concerns only the statement of the regular-variation classification.
