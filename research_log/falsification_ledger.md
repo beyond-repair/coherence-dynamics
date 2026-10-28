@@ -24,17 +24,17 @@
 - **Result of Phase 4A:** When \(M_1<\infty\), \(\mathcal{J}(\infty)\) equals a moment ratio \(M_1/M_0\) (up to convention). The value depends on the density.
 - **Status:** FAILED as universal. The leading limit \(\mathcal{I}\to-2\) under finite \(M_0\) is retained as a proven asymptotic result.
 
-## Established asymptotic results (not claims of new physics)
+## Established results (not claims of new physics)
 
 - If \(M_0=\int\rho<\infty\), then \(k^2\Sigma(k)\to M_0\) and \(\mathcal{I}(k)\to-2\) (sufficient condition).
-- Phase 4B (closed): finite \(M_0\) is not necessary. The final theorem restricts the power-dependent Stieltjes asymptotic to \(0<\alpha<1\) (giving \(\mathcal{I}\to-2\alpha\)); for \(\alpha>1\) the finite-moment theorem applies; for \(\alpha=1\) the integrated slowly-varying tail decides, with no universal rate asserted.
-- Subleading coefficients, approach rates, and \(\mathcal{J}\) remain spectrum-dependent and require separate analysis.
+- Phase 4B (closed): finite \(M_0\) is not necessary. Power-dependent Stieltjes asymptotic confined to \(0<\alpha<1\); finite-moment theorem for \(\alpha>1\); \(\alpha=1\) decided by integrated tail.
+- **Phase 5:** For \(\rho\ge 0\) not identically zero and \(k>0\), the finite-scale inequality \(-2<\mathcal{I}(k)\le 0\) holds. It is a model-class theorem for nonnegative spectral measures. It is independent of overall coupling strength. It fails for signed measures (adversarial counter-example). It does not yield a tighter universal constant.
 
 ## Open candidates / bounded follow-ups
 
-- Precise approach rates for general slowly-varying factors at \(\alpha=1\) (bounded follow-up, not a blocker).
+- Precise approach rates for general slowly-varying factors at \(\alpha=1\) (bounded follow-up).
 - Higher-order normalized corrections.
 - Spectral moment ratios on finite graphs (exact identities; continuum limit open).
 - RG fixed-point exponents (not yet computed).
 
-No retrospective redefinition of any failed candidate has been performed. Phase 4B is closed.
+No retrospective redefinition of any failed candidate has been performed. Phase 4B remains closed. No gravitational mapping has been introduced.
