@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "Coherence Dynamics"
+version: 0.1.0
+date-released: 2026-10-28
+authors:
+  - family-names: Ware
+    given-names: William Brian
+    affiliation: Atomic Dream Labs
+repository-code: "https://github.com/beyond-repair/coherence-dynamics"
+license: MIT
