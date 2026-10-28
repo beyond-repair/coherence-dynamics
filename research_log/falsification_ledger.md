@@ -26,15 +26,16 @@
 
 ## Established asymptotic results (not claims of new physics)
 
-- If \(M_0=\int\rho<\infty\), then \(k^2\Sigma(k)\to M_0\) and \(\mathcal{I}(k)\to-2\).
-- This leading behavior is independent of tail shape provided the zeroth moment is finite.
+- If \(M_0=\int\rho<\infty\), then \(k^2\Sigma(k)\to M_0\) and \(\mathcal{I}(k)\to-2\) (sufficient condition).
+- Phase 4B refinement: finite \(M_0\) is not necessary. Densities regularly varying of index \(-1\) (including \(\rho(s)=1/(1+s)\)) still satisfy \(\mathcal{I}\to-2\), with logarithmic approach rate and divergent \(\mathcal{J}\).
+- For regular variation of index \(-\alpha\) with \(\alpha\neq 1\), the limit is \(-2\alpha\).
 - Subleading coefficients and the rate of approach remain spectrum-dependent.
 
 ## Open candidates
 
-- Precise approach rates for logarithmically divergent moments.
+- Precise approach rates for general slowly-varying factors.
 - Higher-order normalized corrections.
 - Spectral moment ratios on finite graphs (exact identities; continuum limit open).
 - RG fixed-point exponents (not yet computed).
 
-No retrospective redefinition of any candidate has been performed.
+No retrospective redefinition of any candidate has been performed. The Phase 4B classification is a new theorem.
