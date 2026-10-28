@@ -1,6 +1,7 @@
 # Phase 4B — Refined Asymptotic Boundary via Regular Variation
 
-**Date:** 2026-10-28
+**Date:** 2026-10-28  
+**Correction:** 2026-10-28 (exponent ranges audited)
 
 ## Correction to the Phase 4A boundary statement
 
@@ -31,50 +32,35 @@ For \(\rho(s)=1/(1+s)\) (logarithmically divergent \(M_0\)):
 \]
 The leading slope still tends to \(-2\), but the approach is only logarithmic and the normalized correction diverges.
 
-## Regular variation
+## Corrected regular-variation classification
 
-A nonnegative measurable function \(L\) is slowly varying if
-\[
-\frac{L(\lambda t)}{L(t)}\to 1\qquad(t\to\infty)\quad\text{for every }\lambda>0.
-\]
-Consider densities of the form
+Assume \(\rho\ge 0\), locally integrable, and
 \[
 \rho(s)\sim s^{-\alpha}L(s),\qquad s\to\infty,
 \]
-with \(L\) slowly varying.
-
-- If \(\alpha>1\), then \(M_0<\infty\) and the Phase 4A theorem applies: \(\mathcal{I}\to-2\).
-- If \(\alpha=1\) and \(L\) is slowly varying (e.g., \(L\equiv 1\) or \(L=\ln\)), then \(M_0=\infty\) but \(\mathcal{I}\to-2\) still holds, with a rate controlled by \(L\).
-- If \(\alpha<1\), the leading decay of \(\Sigma\) is slower than \(1/k^2\) and \(\mathcal{I}\to-2\alpha\) (or a related value determined by the Tauberian theorem for the resolvent).
-
-**Tauberian reminder (Karamata / monotone density).**  
-Under regular variation of index \(-\alpha\) with \(\alpha\in(0,2)\),
+with \(L\) slowly varying. The Stieltjes-transform asymptotic
 \[
 \Sigma(k)\sim c\,k^{-2\alpha}L(k^2)
 \]
-(with an explicit constant \(c\) depending on \(\alpha\)). Consequently
-\[
-\mathcal{I}(k)\to-2\alpha.
-\]
-Only the case \(\alpha=1\) (including slowly-varying factors) yields the limit \(-2\).
+(and therefore \(\mathcal{I}(k)\to-2\alpha\)) applies in the non-integrable range under standard Tauberian conditions (monotone density or regular variation with index in \((-1,0)\) after the change of variables, etc.). It does **not** override the finite-moment theorem when the tail is integrable.
+
+| Tail exponent \(\alpha\) | Total weight \(M_0\) | Leading limit of \(\mathcal{I}\) | Notes |
+|--------------------------|----------------------|----------------------------------|-------|
+| \(\alpha<1\) | Divergent | \(-2\alpha\) | Under regular-variation / Tauberian conditions on the Stieltjes transform |
+| \(\alpha=1\) | May be finite or divergent depending on \(L\) | Typically \(-2\) | Rate controlled by the integrated tail of \(L\); see exact example |
+| \(\alpha>1\) | Finite | \(-2\) | Finite-moment theorem applies; power-law formula does not override |
+| \(\alpha\le 0\) | Generally divergent | Separate analysis required | Do not extrapolate the \(-2\alpha\) formula automatically |
+
+**Important:** When \(\alpha>1\) the tail is integrable at infinity, so \(M_0<\infty\) (assuming local integrability) and the finite-moment theorem forces \(\mathcal{I}\to-2\). The power-dependent limit belongs only to the non-integrable range \(\alpha<1\).
+
+## Behavior of the normalized correction \(\mathcal{J}\)
+
+\(\mathcal{J}(k)\) is finite in the limit only when the first moment converges (or under a stronger integrated-tail condition). Divergence of \(M_1\) does not follow automatically from the leading limit of \(\mathcal{I}\); it depends on the detailed tail. On the borderline \(\alpha=1\) with \(L\equiv 1\), \(\mathcal{J}\to\infty\) as shown by the exact example. For other slowly-varying factors the rate must be derived separately.
 
 ## What forces \(\mathcal{I}\to-2\)
 
-Sufficient conditions (any one):
-1. \(M_0<\infty\).
-2. \(\rho\) regularly varying with index \(-1\) (including slowly-varying multipliers).
+Sufficient conditions:
+1. \(M_0<\infty\) (includes all \(\alpha>1\)).
+2. Regular variation of index \(-1\) under conditions that make the Stieltjes transform produce a logarithmic factor (includes the exact example).
 
-Conditions that produce a different limit:
-- Regular variation with index \(-\alpha\), \(\alpha\neq 1\): limit \(-2\alpha\).
-
-The normalized correction \(\mathcal{J}\) remains finite only inside the stricter class \(M_1<\infty\); it diverges on the borderline \(\alpha=1\).
-
-## Numerical checks
-
-Representative densities confirm:
-- Exponential / compact: rapid approach to \(-2\).
-- \(\rho=1/(1+s)\): \(\mathcal{I}(x)+2\sim 2/\ln x\), \(\mathcal{J}\to\infty\).
-- Pure power \(\rho(s)=s^{-1.5}\) (finite \(M_0\)): consistent with \(-2\).
-- Pure power \(\rho(s)=s^{-0.5}\) (cut off in the ultraviolet for integrability): limit consistent with \(-1\).
-
-All prior candidate definitions remain unchanged. The broader classification is a new theorem, not a reinterpretation of the failed universality claim.
+The original failed-universality claims for \(\mathcal{I}\) and \(\mathcal{J}\) as constants independent of all spectra remain failed. This correction is a refinement of the sufficient conditions, not a reinterpretation of those failures.
