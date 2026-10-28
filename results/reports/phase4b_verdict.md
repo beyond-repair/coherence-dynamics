@@ -1,7 +1,8 @@
-# Phase 4B Verdict — Sufficient but Not Necessary Condition
+# Phase 4B Verdict — Closed
 
 **Date:** 2026-10-28  
-**Correction:** 2026-10-28 (exponent ranges audited)
+**Final scope correction:** 2026-10-28  
+**Status:** Phase 4B closed
 
 ## Refined statement
 
@@ -17,19 +18,15 @@ For \(\rho(s)=1/(1+s)\):
 \mathcal{J}(x)\to\infty.
 \]
 
-## Corrected classification by regular variation index \(-\alpha\)
+## Final theorem (closure)
 
-Assuming local integrability and the stated tail asymptotics:
+Let \(\rho\) be locally integrable and nontrivial, with \(\rho(s)\sim s^{-\alpha}L(s)\) as \(s\to\infty\), where \(L\) is positive and slowly varying. For the ordinary Stieltjes integral to converge at infinity under this power-law model, require \(\alpha>0\).
 
-| Tail exponent | \(M_0\) | Leading limit of \(\mathcal{I}\) |
-|---------------|--------|----------------------------------|
-| \(\alpha<1\) | Divergent | \(-2\alpha\) (under Stieltjes/Tauberian conditions) |
-| \(\alpha=1\) | Depends on \(L\) | Typically \(-2\), rate set by integrated tail |
-| \(\alpha>1\) | Finite | \(-2\) (finite-moment theorem; power formula does not apply) |
+- For \(0<\alpha<1\), under applicable regular-variation conditions, \(\Sigma(k)\) has leading behavior proportional to \(k^{-2\alpha}L(k^2)\), giving \(\mathcal{I}(k)\to-2\alpha\).
+- For \(\alpha>1\), the tail is integrable; if the full spectral density has finite, nonzero \(M_0\), then \(\mathcal{I}(k)\to-2\).
+- For \(\alpha=1\), classify according to the integrated slowly varying tail and whether \(M_0\) is finite. Do not assert a universal convergence rate without further assumptions.
 
-The power-dependent limit belongs only to the non-integrable range. When \(\alpha>1\) the finite-moment theorem takes precedence.
-
-\(\mathcal{J}\) finiteness requires control of the first moment (or a stronger tail condition) and is not automatic from the leading limit of \(\mathcal{I}\).
+The behavior of \(\mathcal{J}(k)\) requires a separate asymptotic analysis.
 
 ## Status of prior candidates
 
@@ -37,4 +34,6 @@ The power-dependent limit belongs only to the non-integrable range. When \(\alph
 - \(\mathcal{J}\) as a universal constant: still FAILED.
 - The leading limit \(\mathcal{I}\to-2\) under the sufficient conditions above: retained as a proven asymptotic theorem.
 
-No definitions were altered. No gravitational interpretation is introduced. This is a mathematical correction of the classification ranges only.
+No definitions were altered. No gravitational interpretation is introduced.  
+General slowly-varying rates at \(\alpha=1\) are a bounded follow-up, not a blocker.  
+Phase 4B is closed.
