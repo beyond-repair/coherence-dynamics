@@ -18,6 +18,8 @@ No universal numerical constant, new force, modified gravity, or informational s
 
 This is a research foundation, not a completed theory. Ware Constant (W ≈ 0.08) appears only as historical context from prior repositories and is not a parameter, target, or acceptance criterion here.
 
+CI: GitHub Actions runs `pytest` on push/PR to main (see `.github/workflows/ci.yml`).
+
 ## Quick Start
 
 ```bash
@@ -38,6 +40,7 @@ pytest -q
 - `experiments/` — Baseline, falsification, holdout.
 - `tests/` — Analytic identities, conservation, spectral, convergence, reproducibility.
 - `research_log/` — Decisions, failed candidates, provenance.
+- `.github/workflows/` — CI for tests.
 
 ## Provenance
 
@@ -59,4 +62,4 @@ See `docs/research_roadmap.md`.
 
 ---
 
-**Atomic Dream Labs / beyond-repair** · 2026-10-28
+**Atomic Dream Labs / beyond-repair** · 2026-10-29
